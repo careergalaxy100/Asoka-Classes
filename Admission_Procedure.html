@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashoka Classes</title>
+
+ <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Slick Carousel CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!-- jQuery & Slick JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- ---------- TOP BAR ---------- -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center py-2">
+
+    <!-- ===== LEFT SIDE ===== -->
+    <div class="left-section d-flex align-items-center  gap-4">
+
+      <!-- Contact Info -->
+      <div class="contact-info d-flex align-items-center gap-4 flex-wrap">
+        <div class="d-flex align-items-center gap-2">
+          <i class="fas fa-phone text-success"></i>
+          <a href="tel:+919149061829" class="text-decoration-none">+91 7500192061 / +91 9149061829</a>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <i class="fab fa-whatsapp text-success"></i>
+          <a href="https://wa.me/919149061829" class="text-decoration-none">+91 9149061829</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== RIGHT SIDE ===== -->
+    <div class="right-section d-flex align-items-center gap-4 flex-wrap" >
+
+      <!-- Age Calculator Trigger -->
+      <div class="icon-box text-center" id="openCalculator" style="cursor:pointer;">
+        <i class="fas fa-calculator text-warning"></i>
+        <p class="mb-0 small fw-semibold">Age Calculator</p>
+      </div>
+
+          <div class="icon-box text-center">
+        
+        <a href="https://youtube.com/@asokaclasses" target="_blank"><i class="fab fa-youtube text-danger"></i><p class="mb-0 small fw-semibold">Youtube</p></a>
+      </div>
+
+      <div class="icon-box text-center">
+        
+        <a href="https://wa.me/919149061829" class="text-decoration-none" target="_blank"><i class="fab fa-whatsapp text-success"></i><p class="mb-0 small fw-semibold">WhatsApp</p></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ---------- POPUP (AGE CALCULATOR) ---------- -->
+<div id="agePopup" class="popup-overlay">
+  <div class="popup-box">
+    <span id="closePopup" class="close-btn">&times;</span>
+    <h4 class="text-center mb-3">🎂 Age Calculator</h4>
+    <input type="date" id="dob" class="form-control mb-3">
+    <button id="calcBtn" class="btn btn-warning w-100 mb-3">Calculate Age</button>
+    <p id="result" class="text-center fw-semibold"></p>
+  </div>
+</div>
+
+<!-- ---------- STYLES ---------- -->
+<style>
+  /* Popup Overlay */
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  /* Popup Box */
+  .popup-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 90%;
+    max-width: 360px;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease;
+  }
+
+  .popup-box h4 {
+    color: #0b1a53;
+  }
+
+  .popup-box .btn {
+    background-color: #ed9121;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+  }
+
+  .popup-box .btn:hover {
+    background-color: #d77d15;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+
+   header {
+      background-color: #0b1a53;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #0b1a53;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: disc inside;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+     /* Banner Section */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      filter: brightness(70%);
+    }
+
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+
+    .banner-text h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .banner-text p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+
+    /* Main Container */
+    .admission-container {
+      max-width: 950px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .admission-container:hover {
+      transform: translateY(-4px);
+    }
+
+    .admission-title {
+      text-align: center;
+      color: #0b1a53;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #0b1a53;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #0b1a53;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      border-left: 4px solid #d77d15;
+      font-weight: bolder;
+      padding-left: 10px;
+      font-size: 1.3rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 25px;
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      background-color: #e0e7ff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      font-weight: 500;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .footer-note {
+      margin-top: 25px;
+      background-color: #f1f5f9;
+      padding: 15px;
+      border-left: 4px solid #1e40af;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .banner {
+        height: 220px;
+      }
+
+      .banner-text h1 {
+        font-size: 1.8rem;
+      }
+
+      .admission-container {
+        padding: 25px;
+      }
+
+      .admission-title {
+        font-size: 1.6rem;
+      }
+    }
+
+
+</style>
+
+
+<!-- ---------- JAVASCRIPT ---------- -->
+<script>
+  const popup = document.getElementById("agePopup");
+  const openBtn = document.getElementById("openCalculator");
+  const closeBtn = document.getElementById("closePopup");
+  const calcBtn = document.getElementById("calcBtn");
+
+  openBtn.onclick = () => popup.style.display = "flex";
+  closeBtn.onclick = () => popup.style.display = "none";
+  window.onclick = (e) => { if (e.target === popup) popup.style.display = "none"; }
+
+  calcBtn.onclick = () => {
+    const dob = document.getElementById("dob").value;
+    const result = document.getElementById("result");
+
+    if (!dob) {
+      result.textContent = "⚠️ Please select your date of birth!";
+      result.style.color = "red";
+      return;
+    }
+
+    const birthDate = new Date(dob);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+
+    result.textContent = `🎉 Your Age is ${age} years.`;
+    result.style.color = "#0b1a53";
+  };
+</script>
+
+
+  <!-- ---------- NAVBAR ---------- -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/Index.html">
+        <img src="./WhatsApp Image 2025-10-04 at 12.30.47 PM.jpeg" alt="ASOKA Classes Logo"
+          style="height:70px;border-radius:50%;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="./Index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./About_us.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link" target="_blank"
+              href="https://asokaclasses.akamai.net.in/new-courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Our_Faculty.html">Our Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Asoka_Classes_Gallery.html">Asoka Classes Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Admission_Procedure.html">Admission Procedure</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Achievers.html">Achievers</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Contact_us.html">Contact us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./PYQ_Sample_papers.html">PYQ Sample Papers</a></li>
+
+
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- Sainik_School -->
+  
+<!-- Banner Section -->
+  <div class="banner">
+    <img src="./Photos/Sainik_School.jpg" alt="Sainik School Campus">
+    <div class="banner-text">
+      <h1>Procedure To Enter Sainik School</h1>
+      <p>Short Guide | Asoka Classes</p>
+    </div>
+  </div>
+
+  <!-- Admission Process Content -->
+  <div class="admission-container">
+
+    <p>
+      The Sainik School admission process is based on the 
+      <strong>All India Sainik Schools Entrance Examination (AISSEE)</strong> conducted by the NTA 
+      for Classes VI and IX, followed by <strong>e-counselling</strong> and a <strong>medical examination</strong>. 
+      For Class XI, admission depends on Class X Board examination results. The final selection for all classes 
+      is based on the <strong>merit list</strong> after all stages are completed, including document verification.
+    </p>
+
+    <h3>For Class VI and IX</h3>
+    <ul>
+      <li><span class="highlight">Apply:</span> Register online for the AISSEE through the official portal.</li>
+      <li><span class="highlight">Eligibility:</span> Class VI: 10–12 years; Class IX: 13–15 years (as of 31st March of the admission year).</li>
+      <li><span class="highlight">Written Exam:</span> The AISSEE includes Mathematics, General Science, Social Studies, English/Language, and Intelligence.</li>
+      <li><span class="highlight">e-Counselling:</span> Conducted based on AISSEE rank.</li>
+      <li><span class="highlight">Medical Examination:</span> Candidates must qualify a medical fitness test.</li>
+      <li><span class="highlight">Document Verification:</span> After the medical test, documents are verified.</li>
+      <li><span class="highlight">Final Selection:</span> Based on the final merit list considering written score, medical fitness, and document verification.</li>
+    </ul>
+
+    <h3>For Class XI</h3>
+    <ul>
+      <li><span class="highlight">Admission:</span> Based on Class X Board exam marks.</li>
+    </ul>
+
+    <h3>Key Details</h3>
+    <ul>
+      <li><span class="highlight">Application Period:</span> Online applications open in October; exam held in January.</li>
+      <li><span class="highlight">Girl Candidates:</span> Girls are eligible for Class VI and IX in all Sainik Schools.</li>
+      <li><span class="highlight">New Sainik Schools:</span> Two routes — 40% AISSEE candidates and 60% from approved New Sainik Schools via qualifying test.</li>
+    </ul>
+
+    <div class="footer-note">
+      <strong>Note:</strong> Students should regularly check the official Sainik School website or NTA portal for updated notifications, exam patterns, and important dates.
+    </div>
+  </div>
+
+
+
+
+
+<!-- RIMC -->
+  <!-- Banner Section -->
+  <div class="banner">
+    <img src="./Photos/RIMC.jpg" alt="RIMC Campus">
+    <div class="banner-text">
+      <h1>RIMC Admission Process</h1>
+      <p>Step-by-Step Guide | Asoka Classes</p>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="admission-container">
+
+    <p>
+      The <strong>RIMC (Rashtriya Indian Military College)</strong> admission process involves a 
+      <strong>written exam</strong>, an <strong>interview</strong>, and a <strong>medical examination</strong>. 
+      Candidates must be studying in or have passed Class 7, be between <strong>11.5 and 13 years</strong> of age, 
+      and submit their application through their respective <strong>state government</strong>.
+    </p>
+
+    <p>
+      The written exam tests <strong>English</strong>, <strong>Mathematics</strong>, and <strong>General Knowledge</strong>. 
+      Those who qualify proceed to the personal interview and medical test.
+    </p>
+
+    <h3>Admission Steps</h3>
+    <ul>
+      <li><span class="highlight">Submit Application:</span> Submit the application form to your respective state government.</li>
+      <li><span class="highlight">Written Examination:</span> Clear a written exam consisting of three papers:</li>
+      <ul>
+        <li>English</li>
+        <li>Mathematics</li>
+        <li>General Knowledge</li>
+      </ul>
+      <li><span class="highlight">Interview:</span> Candidates who pass the written exam are called for a personal interview.</li>
+      <li><span class="highlight">Medical Examination:</span> Conducted after the interview to ensure physical and mental fitness.</li>
+    </ul>
+
+    <h3>Eligibility Criteria</h3>
+    <ul>
+      <li><span class="highlight">Age:</span> 11.5 to 13 years old.</li>
+      <li><span class="highlight">Education:</span> Must be studying in Class 7 or have passed Class 7.</li>
+      <li><span class="highlight">Date of Birth:</span> Must be born between <strong>January 2, 2013</strong> and <strong>July 1, 2014</strong> for 2025 admission.</li>
+    </ul>
+
+    <h3>Key Requirements</h3>
+    <ul>
+      <li>A <strong>domicile certificate</strong> is required.</li>
+      <li><strong>Passport-sized photographs</strong> must be attached with the application.</li>
+    </ul>
+
+    <div class="footer-note">
+      <strong>Note:</strong> Applications are accepted through state governments only. Ensure all documents are verified before submission. Visit the official RIMC website for exam dates and detailed notifications.
+    </div>
+  </div>
+
+
+
+  <!-- RMS -->
+
+<!-- Banner Section -->
+<div class="banner">
+  <img src="./Photos/Rashtriya-Military-School.jpg" alt="Rashtriya Military School Campus">
+  <div class="banner-text">
+    <h1>RMS Admission Process</h1>
+    <p>Step-by-Step Guide | Asoka Classes</p>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="admission-container">
+
+  <p>
+    The <strong>Rashtriya Military Schools (RMS)</strong> admission process is conducted for 
+    <strong>Class VI</strong> and <strong>Class IX</strong> through the 
+    <strong>Common Entrance Test (CET)</strong>. All admissions are strictly 
+    <strong>residential (boarding)</strong> and open to both <strong>boys and girls</strong>.
+  </p>
+
+  <p>
+    The selection is based on performance in the written test (CET), followed by an 
+    <strong>interview</strong> and a <strong>medical examination</strong>. 
+    The final merit list is prepared after all stages are completed.
+  </p>
+
+  <h3>Admission Steps</h3>
+  <ul>
+    <li><span class="highlight">Online Application:</span> Candidates must fill out the application form on the official RMS website and upload required documents.</li>
+    <li><span class="highlight">Common Entrance Test (CET):</span> The written exam is OMR-based and generally held in December.</li>
+    <li><span class="highlight">Interview:</span> Candidates who clear the written exam are shortlisted for an interview round.</li>
+    <li><span class="highlight">Medical Examination:</span> Conducted at designated military hospitals to ensure physical fitness.</li>
+    <li><span class="highlight">Final Selection:</span> Based on combined performance in CET, interview, and medical test.</li>
+  </ul>
+
+  <h3>Eligibility Criteria</h3>
+  <ul>
+    <li><span class="highlight">Class VI:</span> 10 to 12 years of age; must have passed or be studying in Class V.</li>
+    <li><span class="highlight">Class IX:</span> 13 to 15 years of age; must have passed or be studying in Class VIII.</li>
+    <li><span class="highlight">Relaxation:</span> Up to 6 months in upper age limit for wards of personnel killed in action (KIA).</li>
+  </ul>
+
+  <h3>Reservation / Quota</h3>
+  <ul>
+    <li><span class="highlight">70%</span> of seats reserved for wards of JCOs/OR (including ex-servicemen).</li>
+    <li><span class="highlight">30%</span> for wards of Officers and Civilians.</li>
+    <li>OBC-NCL, SC, and ST reservations applicable as per norms.</li>
+    <li>Girls are eligible for admission to both Class VI and IX.</li>
+  </ul>
+
+  <h3>Documents Required</h3>
+  <ul>
+    <li>Birth Certificate</li>
+    <li>Previous School Marksheet / Transfer Certificate</li>
+    <li>Caste / Category Certificate (if applicable)</li>
+    <li>Defence Service Certificate (for Defence Quota)</li>
+    <li>Identity Proof (Aadhaar / Parent’s ID)</li>
+    <li>Passport-size Photographs</li>
+  </ul>
+
+  <div class="footer-note">
+    <strong>Note:</strong> The RMS CET is usually held in December each year. 
+    Application forms are available online through the official 
+    <a href="https://www.rashtriyamilitaryschools.edu.in/" target="_blank">RMS website</a>. 
+    Ensure all documents are uploaded correctly before submission.
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  
+
+
+  <!-- ========== FOOTER SECTION ========== -->
+<footer class="footer-section">
+   <div class="footer-container">
+    <div class="footer-content">
+
+      <!-- Left: Logo + Description -->
+      <div class="footer-col about">
+        <div class="footer-logo">
+          <img src="./WhatsApp Image 2025-10-04 at 12.30.47 PM.jpeg" alt="ASOKA Logo" class="logo-img">
+          <div class="logo-text">
+            <h3>ASOKA</h3>
+            <p>ASOKA CLASSES<br> ACADEMY</p>
+          </div>
+        </div>
+         <p class="footer-desc">
+          The Asoka Classes, India’s top professional training institute, dedicated to preparing students for top defence and military-entry examinations such as Sainik School, RMS, RIMC, and NVS. With a mission to transform lives through quality education, we combine expert faculty, structured pedagogy, and modern teaching methodologies to help aspirants succeed with confidence.
+        </p>
+      </div>
+
+      <!-- Middle: Useful Links -->
+      <div class="footer-col links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="fa-regular fa-bookmark"></i> Sainik School</li>
+          <li><i class="fa-regular fa-bookmark"></i> RMS</li>
+          <li><i class="fa-regular fa-bookmark"></i> Navodaya</li>
+          <li><i class="fa-regular fa-bookmark"></i> UPSS</li>
+          <li><i class="fa-regular fa-bookmark"></i> RIMC</li>
+          <li><i class="fa-regular fa-bookmark"></i> UPSC</li>
+        </ul>
+      </div>
+
+      <!-- Middle: Our Institute -->
+      <div class="footer-col institute">
+        <h4>Our Institute</h4>
+        <ul>
+          <li><i class="fa-solid fa-up-right-from-square"></i> Home</li>
+          <li><i class="fa-solid fa-up-right-from-square"></i> About us</li>
+          <li><i class="fa-solid fa-up-right-from-square"></i> Contact us</li>
+          <li><i class="fa-solid fa-up-right-from-square"></i> Privacy Policy</li>
+          <li><i class="fa-solid fa-up-right-from-square"></i> Terms & Condition</li>
+        </ul>
+      </div>
+
+      <!-- Right: Get in Touch -->
+      <div class="footer-col contact">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> +91 9149061829</li>
+          <li><i class="fa-solid fa-phone"></i> +91 7500192061</li>
+          <li><i class="fa-brands fa-whatsapp"></i> +91 9149061829</li>
+          <li><i class="fa-solid fa-envelope"></i>asokaclasses@gmail.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> Lane no - 6, PO, Rajpur Rd, Kandoli, Block D, Upper, Chironwali, Dehradun, Uttarakhand 248013</li>
+        </ul>
+
+        <h5>Social Handles</h5>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/asokaclasses" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/asoka_classes" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@asokaclasses" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© Copyrights 2025 <b>The Asoka Classes</b> All rights reserved</p>
+    <p>Designed and Managed With ❤️ By <b>VIKAS CHAUHAN</b></p>
+  </div>
+</footer>
+
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- ---------- Bootstrap JS ---------- -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
