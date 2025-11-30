@@ -14,12 +14,6 @@
   </url>
 
   <url>
-    <loc>https://asokaclasses.akamai.net.in/new-courses</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
     <loc>https://asokaclasses.com/Our_Faculty.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
