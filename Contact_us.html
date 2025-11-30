@@ -1,174 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashoka Classes</title>
 
- <!-- Bootstrap -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact ASOKA Classes | Get in Touch</title>
+  <meta name="description"
+    content="Reach out to ASOKA Classes for admission, counselling, fee structure, demo classes and coaching details.">
+  <meta name="keywords"
+    content="Contact ASOKA Classes, ASOKA Classes phone number, defence coaching contact, RIMC coaching contact">
+
+  <meta property="og:title" content="Contact ASOKA Classes">
+  <meta property="og:description" content="Contact us for admission and coaching information.">
+  <meta property="og:url" content="https://asokaclasses.com/Contact_us.html">
+  <meta property="og:image" content="https://asokaclasses.com/banner.jpg">
+
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- Slick Carousel CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-<!-- jQuery & Slick JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- jQuery & Slick JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- ---------- TOP BAR ---------- -->
-<div class="top-bar">
-  <div class="container d-flex justify-content-between align-items-center py-2">
+  <!-- ---------- TOP BAR ---------- -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center py-2">
 
-    <!-- ===== LEFT SIDE ===== -->
-    <div class="left-section d-flex align-items-center  gap-4">
+      <!-- ===== LEFT SIDE ===== -->
+      <div class="left-section d-flex align-items-center  gap-4">
 
 
-      <!-- Contact Info -->
-      <div class="contact-info d-flex align-items-center gap-4 flex-wrap">
-        <div class="d-flex align-items-center gap-2">
-          <i class="fas fa-phone text-success"></i>
-          <a href="tel:+919149061829" class="text-decoration-none">+91 7500192061 / +91 9149061829</a>
+        <!-- Contact Info -->
+        <div class="contact-info d-flex align-items-center gap-4 flex-wrap">
+          <div class="d-flex align-items-center gap-2">
+            <i class="fas fa-phone text-success"></i>
+            <a href="tel:+919149061829" class="text-decoration-none">+91 7500192061 / +91 9149061829</a>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fab fa-whatsapp text-success"></i>
+            <a href="https://wa.me/919149061829" class="text-decoration-none">+91 9149061829</a>
+          </div>
         </div>
-        <div class="d-flex align-items-center gap-2">
-          <i class="fab fa-whatsapp text-success"></i>
-          <a href="https://wa.me/919149061829" class="text-decoration-none">+91 9149061829</a>
+
+      </div>
+
+      <!-- ===== RIGHT SIDE ===== -->
+      <div class="right-section d-flex align-items-center gap-4 flex-wrap">
+
+        <!-- Age Calculator Trigger -->
+        <div class="icon-box text-center" id="openCalculator" style="cursor:pointer;">
+          <i class="fas fa-calculator text-warning"></i>
+          <p class="mb-0 small fw-semibold">Age Calculator</p>
         </div>
+
+        <div class="icon-box text-center">
+
+          <a href="https://youtube.com/@asokaclasses" target="_blank"><i class="fab fa-youtube text-danger"></i>
+            <p class="mb-0 small fw-semibold">Youtube</p>
+          </a>
+        </div>
+
+        <div class="icon-box text-center">
+
+          <a href="https://wa.me/919149061829" class="text-decoration-none" target="_blank"><i
+              class="fab fa-whatsapp text-success"></i>
+            <p class="mb-0 small fw-semibold">WhatsApp</p>
+          </a>
+        </div>
+
       </div>
-
-    </div>
-
-    <!-- ===== RIGHT SIDE ===== -->
-    <div class="right-section d-flex align-items-center gap-4 flex-wrap" >
-
-      <!-- Age Calculator Trigger -->
-      <div class="icon-box text-center" id="openCalculator" style="cursor:pointer;">
-        <i class="fas fa-calculator text-warning"></i>
-        <p class="mb-0 small fw-semibold">Age Calculator</p>
-      </div>
-
-          <div class="icon-box text-center">
-        
-        <a href="https://youtube.com/@asokaclasses" target="_blank"><i class="fab fa-youtube text-danger"></i><p class="mb-0 small fw-semibold">Youtube</p></a>
-      </div>
-
-      <div class="icon-box text-center">
-        
-        <a href="https://wa.me/919149061829" class="text-decoration-none" target="_blank"><i class="fab fa-whatsapp text-success"></i><p class="mb-0 small fw-semibold">WhatsApp</p></a>
-      </div>
-
     </div>
   </div>
-</div>
 
 
 
-<!-- ---------- POPUP (AGE CALCULATOR) ---------- -->
-<div id="agePopup" class="popup-overlay">
-  <div class="popup-box">
-    <span id="closePopup" class="close-btn">&times;</span>
-    <h4 class="text-center mb-3">🎂 Age Calculator</h4>
-    <input type="date" id="dob" class="form-control mb-3">
-    <button id="calcBtn" class="btn btn-warning w-100 mb-3">Calculate Age</button>
-    <p id="result" class="text-center fw-semibold"></p>
+  <!-- ---------- POPUP (AGE CALCULATOR) ---------- -->
+  <div id="agePopup" class="popup-overlay">
+    <div class="popup-box">
+      <span id="closePopup" class="close-btn">&times;</span>
+      <h4 class="text-center mb-3">🎂 Age Calculator</h4>
+      <input type="date" id="dob" class="form-control mb-3">
+      <button id="calcBtn" class="btn btn-warning w-100 mb-3">Calculate Age</button>
+      <p id="result" class="text-center fw-semibold"></p>
+    </div>
   </div>
-</div>
 
-<!-- ---------- STYLES ---------- -->
-<style>
-  /* Popup Overlay */
-  .popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.6);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-
-  /* Popup Box */
-  .popup-box {
-    background: #fff;
-    border-radius: 10px;
-    padding: 25px;
-    width: 90%;
-    max-width: 360px;
-    position: relative;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    animation: fadeIn 0.3s ease;
-  }
-
-  .popup-box h4 {
-    color: #0b1a53;
-  }
-
-  .popup-box .btn {
-    background-color: #ed9121;
-    color: #fff;
-    font-weight: 600;
-    border: none;
-  }
-
-  .popup-box .btn:hover {
-    background-color: #d77d15;
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    font-size: 22px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
-  }
-</style>
-
-
-<!-- ---------- JAVASCRIPT ---------- -->
-<script>
-  const popup = document.getElementById("agePopup");
-  const openBtn = document.getElementById("openCalculator");
-  const closeBtn = document.getElementById("closePopup");
-  const calcBtn = document.getElementById("calcBtn");
-
-  openBtn.onclick = () => popup.style.display = "flex";
-  closeBtn.onclick = () => popup.style.display = "none";
-  window.onclick = (e) => { if (e.target === popup) popup.style.display = "none"; }
-
-  calcBtn.onclick = () => {
-    const dob = document.getElementById("dob").value;
-    const result = document.getElementById("result");
-
-    if (!dob) {
-      result.textContent = "⚠️ Please select your date of birth!";
-      result.style.color = "red";
-      return;
+  <!-- ---------- STYLES ---------- -->
+  <style>
+    /* Popup Overlay */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
     }
 
-    const birthDate = new Date(dob);
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
+    /* Popup Box */
+    .popup-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      width: 90%;
+      max-width: 360px;
+      position: relative;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.3s ease;
     }
 
-    result.textContent = `🎉 Your Age is ${age} years.`;
-    result.style.color = "#0b1a53";
-  };
-</script>
+    .popup-box h4 {
+      color: #0b1a53;
+    }
+
+    .popup-box .btn {
+      background-color: #ed9121;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+    }
+
+    .popup-box .btn:hover {
+      background-color: #d77d15;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 22px;
+      color: #000;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+
+
+  <!-- ---------- JAVASCRIPT ---------- -->
+  <script>
+    const popup = document.getElementById("agePopup");
+    const openBtn = document.getElementById("openCalculator");
+    const closeBtn = document.getElementById("closePopup");
+    const calcBtn = document.getElementById("calcBtn");
+
+    openBtn.onclick = () => popup.style.display = "flex";
+    closeBtn.onclick = () => popup.style.display = "none";
+    window.onclick = (e) => { if (e.target === popup) popup.style.display = "none"; }
+
+    calcBtn.onclick = () => {
+      const dob = document.getElementById("dob").value;
+      const result = document.getElementById("result");
+
+      if (!dob) {
+        result.textContent = "⚠️ Please select your date of birth!";
+        result.style.color = "red";
+        return;
+      }
+
+      const birthDate = new Date(dob);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+
+      result.textContent = `🎉 Your Age is ${age} years.`;
+      result.style.color = "#0b1a53";
+    };
+  </script>
 
 
 
@@ -205,145 +231,165 @@
 
 
   <!-- ===== CONTACT SECTION ===== -->
-<section class="contact-section py-5" style="background-color: #f9f9f9;">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-4" style="color: #0b1a53;">Get in Touch</h2>
-    <p class="text-center mb-5" style="color:#ed9121">We’d love to hear from you! Fill out the form below or reach us through our contact details.</p>
+  <section class="contact-section py-5" style="background-color: #f9f9f9;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4" style="color: #0b1a53;">Get in Touch</h2>
+      <p class="text-center mb-5" style="color:#ed9121">We’d love to hear from you! Fill out the form below or reach us
+        through our contact details.</p>
 
-    <div class="row g-4">
-      
-      <!-- Contact Form -->
-      <div class="col-md-6">
-        <div class="card shadow-sm p-4 border-0">
-          <h5 class="mb-3 fw-bold" style="color: #0b1a53;font-size: x-large;">Send Us a Message</h5>
-          <form id="ContactForm"
-          action="https://formsubmit.co/careergalaxy100@gmail.com"
-          method="POST"
-          target="conFrame">
+      <div class="row g-4">
 
-      <!-- SETTINGS -->
-      <input type="hidden" name="_subject" value="Contact Form Submission">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_autoresponse" value="Thank you for registering with Career Galaxy! Our team will contact you shortly.">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <div class="card shadow-sm p-4 border-0">
+            <h5 class="mb-3 fw-bold" style="color: #0b1a53;font-size: x-large;">Send Us a Message</h5>
+            <form id="ContactForm" action="https://formsubmit.co/careergalaxy100@gmail.com" method="POST"
+              target="conFrame">
 
-  <div class="mb-3">
-    <label for="name" class="form-label" style="color: #ed9121;">Full Name</label>
-    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-  </div>
+              <!-- SETTINGS -->
+              <input type="hidden" name="_subject" value="Contact Form Submission">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_autoresponse"
+                value="Thank you for registering with Career Galaxy! Our team will contact you shortly.">
 
-  <div class="mb-3">
-    <label for="email" class="form-label" style="color: #ed9121;">Email Address</label>
-    <input type="email" class="form-control" name="_replyto" id="email" placeholder="name@example.com" required>
-  </div>
+              <div class="mb-3">
+                <label for="name" class="form-label" style="color: #ed9121;">Full Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+              </div>
 
-  <div class="mb-3">
-    <label for="phone" class="form-label" style="color: #ed9121;">Phone Number</label>
-    <input type="tel" class="form-control" name="phone" id="phone" placeholder="+91 98765 43210">
-  </div>
+              <div class="mb-3">
+                <label for="email" class="form-label" style="color: #ed9121;">Email Address</label>
+                <input type="email" class="form-control" name="_replyto" id="email" placeholder="name@example.com"
+                  required>
+              </div>
 
-  <div class="mb-3">
-    <label for="message" class="form-label" style="color: #ed9121;">Message</label>
-    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Write your message..." required></textarea>
-  </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label" style="color: #ed9121;">Phone Number</label>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="+91 98765 43210">
+              </div>
 
-  <button type="submit" id="conBtn" class="btn w-100" style="background-color: #0b1a53;color: #ed9121;">Submit</button>
-</form>
-  <!-- Success Message -->
-      <div id="conSuccess" class="mt-3 text-center fw-semibold" style="display:none; color:green;">
-        ✅ Contact Form Submitted Successfully!
-      </div>
+              <div class="mb-3">
+                <label for="message" class="form-label" style="color: #ed9121;">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Write your message..."
+                  required></textarea>
+              </div>
 
-       <!-- Hidden Iframe -->
-    <iframe name="conFrame" id="conFrame" style="display:none;"></iframe>
+              <button type="submit" id="conBtn" class="btn w-100"
+                style="background-color: #0b1a53;color: #ed9121;">Submit</button>
+            </form>
+            <!-- Success Message -->
+            <div id="conSuccess" class="mt-3 text-center fw-semibold" style="display:none; color:green;">
+              ✅ Contact Form Submitted Successfully!
+            </div>
 
-    <script>
-(function(){
-  const form = document.getElementById('ContactForm');
-  const msg = document.getElementById('conSuccess');
-  const btn = document.getElementById('conBtn');
-  const iframe = document.getElementById('conFrame');
+            <!-- Hidden Iframe -->
+            <iframe name="conFrame" id="conFrame" style="display:none;"></iframe>
 
-  form.addEventListener('submit', function(){
-    btn.disabled = true;
-    btn.textContent = 'Submitting...';
-  });
+            <script>
+              (function () {
+                const form = document.getElementById('ContactForm');
+                const msg = document.getElementById('conSuccess');
+                const btn = document.getElementById('conBtn');
+                const iframe = document.getElementById('conFrame');
 
-  iframe.addEventListener('load', function(){
-    setTimeout(() => {
-      try { form.reset(); } catch(e){}
-      btn.disabled = false;
-      btn.textContent = 'Contact Now!';
-      msg.style.display = 'block';
-      setTimeout(() => msg.style.display = 'none', 5000);
-    }, 300);
-  });
-})();
-</script>
+                form.addEventListener('submit', function () {
+                  btn.disabled = true;
+                  btn.textContent = 'Submitting...';
+                });
 
-        </div>
-      </div>
+                iframe.addEventListener('load', function () {
+                  setTimeout(() => {
+                    try { form.reset(); } catch (e) { }
+                    btn.disabled = false;
+                    btn.textContent = 'Contact Now!';
+                    msg.style.display = 'block';
+                    setTimeout(() => msg.style.display = 'none', 5000);
+                  }, 300);
+                });
+              })();
+            </script>
 
-      <!-- Contact Info -->
-      <div class="col-md-6">
-        <div class="card shadow-sm p-4 border-0 h-100">
-          <h5 class="mb-3 fw-bold" style="color: #0b1a53;font-size: x-large;">Contact Information</h5>
-          <p><strong>Address:</strong> Lane no - 6, PO, Rajpur Rd, Kandoli, Block D, Upper, Chironwali, Dehradun, Uttarakhand 248013</p>
-          <p><strong>Email:</strong> <a href="mailto:asokaclasses@gmail.com" style="color: #0b1a53;">asokaclasses@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+919149061829" style="color: #0b1a53;">+91 9149061829</a></p>
-          
-          <h5 class="mt-4 mb-3 fw-bold">Follow Us</h5>
-          <div class="d-flex gap-3">
-            <a href="https://www.facebook.com/asokaclasses" target="_blank"><img src="https://img.icons8.com/ios-filled/30/0b1a53/facebook-new.png"/></a>
-            <a href="https://www.instagram.com/asoka_classes" target="_blank"><img src="https://img.icons8.com/ios-filled/30/0b1a53/instagram-new.png"/></a>
-            <a href="https://t.me/asokaclasses" target="_blank"><img src="https://img.icons8.com/ios-filled/30/0b1a53/telegram-app.png"/></a>
-            <a href="https://youtube.com/@asokaclasses" target="_blank"><img src="https://img.icons8.com/ios-filled/30/0b1a53/youtube-play.png"/></a>
-          </div>
-
-          <h5 class="mt-4 mb-3 fw-bold">Find Us on Map</h5>
-          <div class="ratio ratio-16x9">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.497517091529!2d78.067132!3d30.3534552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d78df91b87a7%3A0xde5a435c400b95d4!2sASOKA%20Classes!5e0!3m2!1sen!2sin!4v1759640000000!5m2!1sen!2sin" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy">
-            </iframe>
           </div>
         </div>
-      </div>
 
+        <!-- Contact Info -->
+        <div class="col-md-6">
+          <div class="card shadow-sm p-4 border-0 h-100">
+            <h5 class="mb-3 fw-bold" style="color: #0b1a53;font-size: x-large;">Contact Information</h5>
+            <p><strong>Address:</strong> Lane no - 6, PO, Rajpur Rd, Kandoli, Block D, Upper, Chironwali, Dehradun,
+              Uttarakhand 248013</p>
+            <p><strong>Email:</strong> <a href="mailto:asokaclasses@gmail.com"
+                style="color: #0b1a53;">asokaclasses@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919149061829" style="color: #0b1a53;">+91 9149061829</a></p>
+
+            <h5 class="mt-4 mb-3 fw-bold">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="https://www.facebook.com/asokaclasses" target="_blank"><img
+                  src="https://img.icons8.com/ios-filled/30/0b1a53/facebook-new.png" /></a>
+              <a href="https://www.instagram.com/asoka_classes" target="_blank"><img
+                  src="https://img.icons8.com/ios-filled/30/0b1a53/instagram-new.png" /></a>
+              <a href="https://t.me/asokaclasses" target="_blank"><img
+                  src="https://img.icons8.com/ios-filled/30/0b1a53/telegram-app.png" /></a>
+              <a href="https://youtube.com/@asokaclasses" target="_blank"><img
+                  src="https://img.icons8.com/ios-filled/30/0b1a53/youtube-play.png" /></a>
+            </div>
+
+            <h5 class="mt-4 mb-3 fw-bold">Find Us on Map</h5>
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.497517091529!2d78.067132!3d30.3534552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d78df91b87a7%3A0xde5a435c400b95d4!2sASOKA%20Classes!5e0!3m2!1sen!2sin!4v1759640000000!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<style>
-.contact-section .card {
-  border-radius: 1rem;
-  transition: all 0.3s ease;
-}
-.contact-section .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(11,26,83,0.2);
-}
-.contact-section h2 {
-  animation: fadeUp 1s ease forwards;
-  opacity: 0;
-}
-.contact-section p {
-  animation: fadeUp 1s ease forwards;
-  opacity: 0;
-  animation-delay: 0.2s;
-}
-@keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
-  from { opacity: 0; transform: translateY(20px); }
-}
-.contact-section a img {
-  transition: transform 0.3s ease;
-}
-.contact-section a img:hover {
-  transform: scale(1.2);
-}
-</style>
+  <style>
+    .contact-section .card {
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .contact-section .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(11, 26, 83, 0.2);
+    }
+
+    .contact-section h2 {
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .contact-section p {
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    .contact-section a img {
+      transition: transform 0.3s ease;
+    }
+
+    .contact-section a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
 
 
 
@@ -352,81 +398,85 @@
 
 
   <!-- ========== FOOTER SECTION ========== -->
-<footer class="footer-section">
-   <div class="footer-container">
-    <div class="footer-content">
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-content">
 
-      <!-- Left: Logo + Description -->
-      <div class="footer-col about">
-        <div class="footer-logo">
-          <img src="./WhatsApp Image 2025-10-04 at 12.30.47 PM.jpeg" alt="ASOKA Logo" class="logo-img">
-          <div class="logo-text">
-            <h3>ASOKA</h3>
-            <p>ASOKA CLASSES<br> ACADEMY</p>
+        <!-- Left: Logo + Description -->
+        <div class="footer-col about">
+          <div class="footer-logo">
+            <img src="./WhatsApp Image 2025-10-04 at 12.30.47 PM.jpeg" alt="ASOKA Logo" class="logo-img">
+            <div class="logo-text">
+              <h3>ASOKA</h3>
+              <p>ASOKA CLASSES<br> ACADEMY</p>
+            </div>
+          </div>
+          <p class="footer-desc">
+            The Asoka Classes, India’s top professional training institute, dedicated to preparing students for top
+            defence and military-entry examinations such as Sainik School, RMS, RIMC, and NVS. With a mission to
+            transform lives through quality education, we combine expert faculty, structured pedagogy, and modern
+            teaching methodologies to help aspirants succeed with confidence.
+          </p>
+        </div>
+
+        <!-- Middle: Useful Links -->
+        <div class="footer-col links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="fa-regular fa-bookmark"></i> Sainik School</li>
+            <li><i class="fa-regular fa-bookmark"></i> RMS</li>
+            <li><i class="fa-regular fa-bookmark"></i> Navodaya</li>
+            <li><i class="fa-regular fa-bookmark"></i> UPSS</li>
+            <li><i class="fa-regular fa-bookmark"></i> RIMC</li>
+            <li><i class="fa-regular fa-bookmark"></i> UPSC</li>
+          </ul>
+        </div>
+
+        <!-- Middle: Our Institute -->
+        <div class="footer-col institute">
+          <h4>Our Institute</h4>
+          <ul>
+            <li><i class="fa-solid fa-up-right-from-square"></i> Home</li>
+            <li><i class="fa-solid fa-up-right-from-square"></i> About us</li>
+            <li><i class="fa-solid fa-up-right-from-square"></i> Contact us</li>
+            <li><i class="fa-solid fa-up-right-from-square"></i> Privacy Policy</li>
+            <li><i class="fa-solid fa-up-right-from-square"></i> Terms & Condition</li>
+          </ul>
+        </div>
+
+        <!-- Right: Get in Touch -->
+        <div class="footer-col contact">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li><i class="fa-solid fa-phone"></i> +91 9149061829</li>
+            <li><i class="fa-solid fa-phone"></i> +91 7500192061</li>
+            <li><i class="fa-brands fa-whatsapp"></i> +91 9149061829</li>
+            <li><i class="fa-solid fa-envelope"></i>asokaclasses@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> Lane no - 6, PO, Rajpur Rd, Kandoli, Block D, Upper,
+              Chironwali, Dehradun, Uttarakhand 248013</li>
+          </ul>
+
+          <h5>Social Handles</h5>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/asokaclasses" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/asoka_classes" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@asokaclasses" target="_blank"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
-         <p class="footer-desc">
-          The Asoka Classes, India’s top professional training institute, dedicated to preparing students for top defence and military-entry examinations such as Sainik School, RMS, RIMC, and NVS. With a mission to transform lives through quality education, we combine expert faculty, structured pedagogy, and modern teaching methodologies to help aspirants succeed with confidence.
-        </p>
+
       </div>
-
-      <!-- Middle: Useful Links -->
-      <div class="footer-col links">
-        <h4>Useful Links</h4>
-        <ul>
-          <li><i class="fa-regular fa-bookmark"></i> Sainik School</li>
-          <li><i class="fa-regular fa-bookmark"></i> RMS</li>
-          <li><i class="fa-regular fa-bookmark"></i> Navodaya</li>
-          <li><i class="fa-regular fa-bookmark"></i> UPSS</li>
-          <li><i class="fa-regular fa-bookmark"></i> RIMC</li>
-          <li><i class="fa-regular fa-bookmark"></i> UPSC</li>
-        </ul>
-      </div>
-
-      <!-- Middle: Our Institute -->
-      <div class="footer-col institute">
-        <h4>Our Institute</h4>
-        <ul>
-          <li><i class="fa-solid fa-up-right-from-square"></i> Home</li>
-          <li><i class="fa-solid fa-up-right-from-square"></i> About us</li>
-          <li><i class="fa-solid fa-up-right-from-square"></i> Contact us</li>
-          <li><i class="fa-solid fa-up-right-from-square"></i> Privacy Policy</li>
-          <li><i class="fa-solid fa-up-right-from-square"></i> Terms & Condition</li>
-        </ul>
-      </div>
-
-      <!-- Right: Get in Touch -->
-      <div class="footer-col contact">
-        <h4>Get in Touch</h4>
-        <ul>
-          <li><i class="fa-solid fa-phone"></i> +91 9149061829</li>
-          <li><i class="fa-solid fa-phone"></i> +91 7500192061</li>
-          <li><i class="fa-brands fa-whatsapp"></i> +91 9149061829</li>
-          <li><i class="fa-solid fa-envelope"></i>asokaclasses@gmail.com</li>
-          <li><i class="fa-solid fa-location-dot"></i> Lane no - 6, PO, Rajpur Rd, Kandoli, Block D, Upper, Chironwali, Dehradun, Uttarakhand 248013</li>
-        </ul>
-
-        <h5>Social Handles</h5>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/asokaclasses" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/asoka_classes" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://youtube.com/@asokaclasses" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-      </div>
-
     </div>
-  </div>
 
 
-  <!-- Bottom Bar -->
-  <div class="footer-bottom">
-    <p>© Copyrights 2025 <b>The Asoka Classes</b> All rights reserved</p>
-    <p>Designed and Managed With ❤️ By <b>VIKAS CHAUHAN</b></p>
-  </div>
-</footer>
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© Copyrights 2025 <b>The Asoka Classes</b> All rights reserved</p>
+      <p>Designed and Managed With ❤️ By <b>VIKAS CHAUHAN</b></p>
+    </div>
+  </footer>
 
   <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
   <!-- ---------- Bootstrap JS ---------- -->
@@ -434,4 +484,5 @@
 
 
 </body>
+
 </html>
