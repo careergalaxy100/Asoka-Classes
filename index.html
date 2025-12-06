@@ -272,8 +272,7 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href=".">
-        <img src="./logo.png" alt="ASOKA Classes Logo"
-          style="height:70px;border-radius:50%;">
+        <img src="./logo.png" alt="ASOKA Classes Logo" style="height:70px;border-radius:50%;">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -1126,8 +1125,8 @@
             <div class="card-body">
               <h6 class="fw-bold" style="color: #ed9121;font-size: small;">English Verb & Modals | Sainik School |
                 Military School</h6>
-              <a href="https://www.youtube.com/watch?v=KQLPu-oh3eg" target="_blank"
-                class="btn course-btn w-100">View Details</a>
+              <a href="https://www.youtube.com/watch?v=KQLPu-oh3eg" target="_blank" class="btn course-btn w-100">View
+                Details</a>
             </div>
           </div>
         </div>
@@ -1136,14 +1135,14 @@
         <div class="col-md-3 col-sm-6">
           <div class="card h-100 shadow-lg border-0 course-card overflow-hidden">
             <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/mtx4p5HMOhM" title="Current Affairs 2025"
-                frameborder="0" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/mtx4p5HMOhM" title="Current Affairs 2025" frameborder="0"
+                allowfullscreen></iframe>
             </div>
             <div class="card-body">
               <h6 class="fw-bold" style="color: #ed9121;font-size: small;">Current Affairs 2025 | RIMC | Sainik School |
                 Military School | UPSC</h6>
-              <a href="https://www.youtube.com/watch?v=mtx4p5HMOhM&t=6s"
-                target="_blank" class="btn course-btn w-100">View Details</a>
+              <a href="https://www.youtube.com/watch?v=mtx4p5HMOhM&t=6s" target="_blank"
+                class="btn course-btn w-100">View Details</a>
             </div>
           </div>
         </div>
@@ -1159,8 +1158,8 @@
             <div class="card-body">
               <h6 class="fw-bold" style="color: #ed9121;font-size: small;">Preposition English Grammer for Sainik School
                 & RIMC (Class 6-9)</h6>
-              <a href="https://www.youtube.com/watch?v=TTygrKLaTxo"
-                target="_blank" class="btn course-btn w-100">View Details</a>
+              <a href="https://www.youtube.com/watch?v=TTygrKLaTxo" target="_blank" class="btn course-btn w-100">View
+                Details</a>
             </div>
           </div>
         </div>
@@ -1176,8 +1175,8 @@
             <div class="card-body">
               <h6 class="fw-bold" style="color: #ed9121;font-size: small;">Science | PYQ | Class 6 & 9 RIMC | RMS |
                 SAINIK SCHOOL 2026</h6>
-              <a href="https://www.youtube.com/watch?v=-gaH8t0J-UU"
-                target="_blank" class="btn course-btn w-100">View Details</a>
+              <a href="https://www.youtube.com/watch?v=-gaH8t0J-UU" target="_blank" class="btn course-btn w-100">View
+                Details</a>
             </div>
           </div>
         </div>
@@ -1916,7 +1915,8 @@
     }
 
     /* Soft glowing circles in background */
-    .faculty-modern::before,
+ 
+  .faculty-modern::before,
     .faculty-modern::after {
       content: "";
       position: absolute;
@@ -1926,8 +1926,9 @@
       background: rgba(237, 145, 33, 0.15);
       filter: blur(100px);
       z-index: 0;
+      pointer-events: none;
+      /* 👈 ADD THIS */
     }
-
     .faculty-modern::before {
       top: -50px;
       left: -80px;
@@ -2021,6 +2022,8 @@
       background: #ed9121;
       color: #fff;
     }
+
+  
   </style>
 
 
@@ -2793,10 +2796,18 @@
         <div class="footer-col links">
           <h4>Direct Links</h4>
           <ul>
-           <a href="https://exams.nta.nic.in/sainik-school-society/" target="_blank" style="color: #ed9121;"><li><i class="fa-regular fa-bookmark"></i> Sainik School</li></a> 
-           <a href="https://www.rashtriyamilitaryschools.edu.in/" target="_blank" style="color: #ed9121;"><li><i class="fa-regular fa-bookmark"></i> RMS</li></a> 
-           <a href="https://www.upsainikschool.org/" target="_blank" style="color: #ed9121;"><li><i class="fa-regular fa-bookmark"></i> UPSS</li></a>
-           <a href="https://rimc.edu.in/rimc-index.aspx" target="_blank" style="color: #ed9121;"><li><i class="fa-regular fa-bookmark"></i> RIMC</li></a>
+            <a href="https://exams.nta.nic.in/sainik-school-society/" target="_blank" style="color: #ed9121;">
+              <li><i class="fa-regular fa-bookmark"></i> Sainik School</li>
+            </a>
+            <a href="https://www.rashtriyamilitaryschools.edu.in/" target="_blank" style="color: #ed9121;">
+              <li><i class="fa-regular fa-bookmark"></i> RMS</li>
+            </a>
+            <a href="https://www.upsainikschool.org/" target="_blank" style="color: #ed9121;">
+              <li><i class="fa-regular fa-bookmark"></i> UPSS</li>
+            </a>
+            <a href="https://rimc.edu.in/rimc-index.aspx" target="_blank" style="color: #ed9121;">
+              <li><i class="fa-regular fa-bookmark"></i> RIMC</li>
+            </a>
           </ul>
         </div>
 
@@ -2804,12 +2815,24 @@
         <div class="footer-col institute">
           <h4>Our Institute</h4>
           <ul>
-            <a href="." style="color: #ed9121;"><li><i class="fa-solid fa-up-right-from-square"></i> Home</li></a>
-           <a href="./About_us.html" style="color: #ed9121;"><li><i class="fa-solid fa-up-right-from-square"></i> About us</li></a> 
-           <a href="./Asoka_Classes_Gallery.html" style="color: #ed9121;"><li><i class="fa-solid fa-up-right-from-square"></i> Asoka Classes Gallery</li></a> 
-           <a href="./Admission_Procedure.html" style="color: #ed9121;"><li><i class="fa-solid fa-up-right-from-square"></i> Admission Procedure</li></a>
-           <a href="./Contact_us.html" style="color: #ed9121;"><li><i class="fa-solid fa-up-right-from-square"></i> Contact us</li></a> 
-           <a href="./PYQ_Sample_papers.html" style="color: #ed9121;"><li><i class="fa-solid fa-up-right-from-square"></i> PYQ Sample Papers</li></a>
+            <a href="." style="color: #ed9121;">
+              <li><i class="fa-solid fa-up-right-from-square"></i> Home</li>
+            </a>
+            <a href="./About_us.html" style="color: #ed9121;">
+              <li><i class="fa-solid fa-up-right-from-square"></i> About us</li>
+            </a>
+            <a href="./Asoka_Classes_Gallery.html" style="color: #ed9121;">
+              <li><i class="fa-solid fa-up-right-from-square"></i> Asoka Classes Gallery</li>
+            </a>
+            <a href="./Admission_Procedure.html" style="color: #ed9121;">
+              <li><i class="fa-solid fa-up-right-from-square"></i> Admission Procedure</li>
+            </a>
+            <a href="./Contact_us.html" style="color: #ed9121;">
+              <li><i class="fa-solid fa-up-right-from-square"></i> Contact us</li>
+            </a>
+            <a href="./PYQ_Sample_papers.html" style="color: #ed9121;">
+              <li><i class="fa-solid fa-up-right-from-square"></i> PYQ Sample Papers</li>
+            </a>
           </ul>
         </div>
 
@@ -2840,7 +2863,7 @@
     <!-- Bottom Bar -->
     <div class="footer-bottom">
       <p><b>The Asoka Classes</b></p>
-   
+
     </div>
   </footer>
 

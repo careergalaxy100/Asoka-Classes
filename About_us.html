@@ -421,8 +421,6 @@
   filter: blur(100px);
   z-index: 0;
 }
-.faculty-modern::before { top: -50px; left: -80px; }
-.faculty-modern::after { bottom: -50px; right: -80px; }
 
 .faculty-grid {
   display: grid;
@@ -503,7 +501,18 @@
   background: #ed9121;
   color: #fff;
 }
-
+.faculty-modern::before,
+.faculty-modern::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(237, 145, 33, 0.15);
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;   /* 👈 ADD THIS */
+}
 </style>
 
 
