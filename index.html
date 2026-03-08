@@ -808,8 +808,8 @@
             <h3 class="text-center fw-bold mb-4" style="color:#0b1a53;">Let’s Connect</h3>
 
             <!-- target a hidden iframe so the page does NOT navigate away -->
-            <form id="contactForm" action="https://formsubmit.co/careergalaxy100@gmail.com" method="POST"
-              target="submitFrame">
+            <form id="connectForm" action="https://formsubmit.co/careergalaxy100@gmail.com" method="POST"
+              target="connectFrame">
 
               <!-- email sent to you (owner) -->
               <input type="hidden" name="_subject" value="New Connection Request Received">
@@ -863,17 +863,17 @@
             </form>
 
             <!-- hidden iframe used as target so user stays on same page -->
-            <iframe name="submitFrame" id="submitFrame" style="display:none;"></iframe>
+            <iframe name="connectFrame" id="connectFrame" style="display:none;"></iframe>
 
           </div>
         </div>
 
         <script>
           (function () {
-            const form = document.getElementById('contactForm');
+            const form = document.getElementById('conecttForm');
             const successMsg = document.getElementById('successMsg');
             const sendBtn = document.getElementById('sendBtn');
-            const iframe = document.getElementById('submitFrame');
+            const iframe = document.getElementById('connectFrame');
 
             // show a quick "sending..." state (optional)
             form.addEventListener('submit', function () {
