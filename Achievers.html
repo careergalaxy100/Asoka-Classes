@@ -55,63 +55,90 @@
       margin: 10px auto 0;
     }
 
-    .achievers-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 30px;
-      padding: 50px 8%;
-    }
+   .achievers-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  padding:50px 30px;
+  max-width:1400px;
+  margin:auto;
+}
 
-    .achiever-card {
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+/* ===== CARD DESIGN ===== */
 
-    .achiever-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
+.achiever-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+  transition:all 0.35s ease;
+  text-align:center;
+}
 
-    .achiever-img {
-      width: 100%;
-      height: 270px;
-    }
+/* Hover effect */
 
-    .achiever-info {
-      padding: 15px;
-    }
+.achiever-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 40px rgba(0,0,0,0.2);
+}
 
-    .achiever-info h5 {
-      color: #ed9121;
-      font-weight: 700;
-      margin-bottom: 5px;
-    }
+/* ===== IMAGE ===== */
 
-    .achiever-info p {
-      font-size: 0.9rem;
-      color: #666;
-    }
+.achiever-img{
+  width:100%;
+  max-height:300px;
+  object-fit:contain;
+  background:#f7f7f7;
+}
 
-    .back-btn {
-      display: block;
-      margin: 30px auto 60px;
-      background: #ed9121;
-      color: #fff;
-      padding: 12px 28px;
-      font-weight: 600;
-      border: none;
-      border-radius: 50px;
-      transition: background 0.3s ease;
-      text-decoration: none;
-    }
+/* ===== TEXT ===== */
 
-    .back-btn:hover {
-      background: #d67810;
-      color: #fff;
-    }
+.achiever-info{
+  padding:18px;
+}
+
+.achiever-info h5{
+  font-size:20px;
+  font-weight:700;
+  color:#ed9121;
+  margin-bottom:8px;
+}
+
+.achiever-info p{
+  margin:4px 0;
+  color:#555;
+  font-size:15px;
+}
+
+/* ===== TABLET ===== */
+
+@media(max-width:900px){
+
+.achievers-grid{
+  grid-template-columns:repeat(2,1fr);
+}
+
+.achiever-img{
+  height:240px;
+}
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:500px){
+
+.achievers-grid{
+  grid-template-columns:1fr;
+  padding:30px 15px;
+}
+
+.achiever-img{
+  height:320px;
+}
+
+}
+
   </style>
 
 
@@ -363,12 +390,208 @@
     </div>
   </section>
 
+  
+
+  <header class="achievers-header">
+    <h1>Results</h1>
+    <p>
+      Meet our proud achievers who have successfully cleared prestigious exams like RMS, Sainik School, and UP Sainik School. Through hard work, discipline, and proper guidance, these students have achieved remarkable success and made their families and mentors proud.
+    </p>
+  </header>
+
+ 
+<div class="exam-filter">
+
+<button onclick="showExam('all')">All Results</button>
+<button onclick="showExam('rms')">RMS</button>
+<button onclick="showExam('sainik')">Sainik School</button>
+<button onclick="showExam('upsainik')">Up Sainik</button>
+
+</div>
+
+
+<section class="achievers-grid-2">
+
+<!-- RMS -->
+<img class="exam rms" src="./Photos/Results/Eleven.jpeg">
+<img class="exam rms" src="./Photos/Results/Five.jpeg">
+<img class="exam rms" src="./Photos/Results/Nine.jpeg">
+<img class="exam rms" src="./Photos/Results/Eighteen.jpeg">
+<img class="exam rms" src="./Photos/Results/Seven.jpeg">
+<img class="exam rms" src="./Photos/Results/Sixteen.jpeg">
+<img class="exam rms" src="./Photos/Results/Thirteen.jpeg">
 
 
 
+<!-- SAINIK -->
+<img class="exam sainik" src="./Photos/Results/Fifteen.jpeg">
+<img class="exam sainik" src="./Photos/Results/Four.jpeg">
+<img class="exam sainik" src="./Photos/Results/Fourteen.jpeg">
+<img class="exam sainik" src="./Photos/Results/Ninteen.jpeg">
+<img class="exam sainik" src="./Photos/Results/One.jpeg">
+<img class="exam sainik" src="./Photos/Results/Seventeen.jpeg">
+<img class="exam sainik" src="./Photos/Results/Six.jpeg">
+<img class="exam sainik" src="./Photos/Results/Ten.jpeg">
+<img class="exam sainik" src="./Photos/Results/Three.jpeg">
+<img class="exam sainik" src="./Photos/Results/Twelve.jpeg">
+<img class="exam sainik" src="./Photos/Results/Twenty.jpeg">
+<img class="exam sainik" src="./Photos/Results/TwentyOne.jpeg">
+<img class="exam sainik" src="./Photos/Results/TwentyTwo.jpeg">
+<img class="exam sainik" src="./Photos/Results/TwentyThree.jpeg">
+<img class="exam sainik" src="./Photos/Results/Four.jpeg">
+<img class="exam sainik" src="./Photos/Results/TwentyFive.jpeg">
 
 
+<!-- UP SAINIK -->
+<img class="exam upsainik" src="./Photos/Results/Two.jpeg">
+<img class="exam upsainik" src="./Photos/Results/Eight.jpeg">
 
+
+</section>
+
+<style>
+  /* FILTER BUTTONS */
+
+.exam-filter{
+text-align:center;
+margin-top:40px;
+}
+
+.exam-filter button{
+background:#ed9121;
+border:none;
+padding:12px 22px;
+margin:6px;
+color:#fff;
+font-weight:600;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.exam-filter button:hover{
+background:#c77717;
+}
+
+.achievers-grid-2 img{
+object-fit:cover;
+}
+/* IMAGE GRID */
+
+.achievers-grid-2{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:40px;
+max-width:1400px;
+margin:auto;
+}
+
+
+.achievers-grid-2 img{
+width:100%;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.35s;
+cursor:pointer;
+}
+
+.achievers-grid-2 img:hover{
+transform:scale(1.05);
+box-shadow:0 18px 40px rgba(0,0,0,0.25);
+}
+
+.exam-filter button.active{
+background:#0b1a53;
+}
+
+/* FILTER SYSTEM */
+
+.exam{
+display:none;
+}
+
+.show{
+display:block;
+}
+
+
+/* MOBILE */
+
+
+@media(max-width:600px){
+
+.achievers-grid-2{
+grid-template-columns:repeat(2,1fr);
+padding:15px;
+gap:15px;
+}
+/* Laptop */
+
+@media(max-width:1200px){
+
+.achievers-grid-2{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+
+/* Tablet */
+
+@media(max-width:900px){
+
+.achievers-grid-2{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+padding:25px;
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:500px){
+
+.achievers-grid-2{
+grid-template-columns:1fr;
+gap:15px;
+padding:15px;
+}
+
+}
+}
+
+</style>
+
+<script>
+
+showExam("all")
+
+function showExam(type){
+
+let items = document.getElementsByClassName("exam")
+
+for(let i=0;i<items.length;i++){
+items[i].classList.remove("show")
+
+if(type == "all" || items[i].classList.contains(type)){
+items[i].classList.add("show")
+}
+}
+
+/* active button */
+
+let btns = document.querySelectorAll(".exam-filter button")
+
+btns.forEach(btn => btn.classList.remove("active"))
+
+event.target.classList.add("active")
+
+}
+
+</script>
 
 
   <!-- ========== FOOTER SECTION ========== -->
